@@ -22,10 +22,10 @@
 
         tr.destaque{
             color: white;
-            background-color: lightslategray;   
+            background-color: rgb(119, 136, 153);   
         }
 
-        .destaque, tr.destaque > th{
+         .destaque{
             text-align: left;
         }
 
@@ -38,29 +38,46 @@
             padding: 10px;
             text-align: center;
         }
+
+        .azul{
+            background-color: aqua;
+        }
+
+        .verde{
+            background-color: aquamarine;
+        }
+        .roxo{
+            background-color: blueviolet;
+        }
     </style>
 </head>
 <body>
     <h1>Turma do 8° ano</h1>
     <table>
         <caption>Boletim do Aluno</caption>
+        <colgroup>
+            <col>
+            <col class="azul">
+            <col class="verde" span="2">
+            <col class="roxo">
+        </colgroup>
         <thead>
             <tr class="destaque">
-                <th colspan="2" rowspan="2">Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplina</th>
+                <th scope="colgroup"colspan="2">Notas</th>
+                <th scope="col"rowspan="2">Média</th>
             </tr>
 
             <tr class="destaque">
-                <th>Nota1</th>
-                <th>Nota2</th>
+                <th scope="col">Nota1</th>
+                <th scope="col">Nota2</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td rowspan="5" colspan="2" class="area">Exatas</td>
+                <td scope="rowgroup" rowspan="5" class="area">Exatas</td>
             </tr>
             <tr>
                 <td class="destaque">Matemática</td>
@@ -88,12 +105,12 @@
             </tr>
 
             <tr class="destaque">
-                <th colspan="5">Média de Exatas</th>
+                <th colspan="4">Média de Exatas</th>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <td rowspan="3" colspan="2" class="area">Humanas</td>
+                <td scope="rowgroup" rowspan="3" class="area">Humanas</td>
             </tr>
             
             <tr>
@@ -111,7 +128,7 @@
             </tr>
             
             <tr class="destaque">
-                <th colspan="5">Média de Humanas</th>
+                <th colspan="4">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
 

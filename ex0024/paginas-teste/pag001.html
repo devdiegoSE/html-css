@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de teste</title>
+    <style> 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightcyan;        
+        }
+    
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+    
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightcyan;
+        }
+    
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    
+        tr:nth-child(even) { /*even= par posso usar 2n*/
+            background-color: lightcyan;
+            }
+        tr:nth-child(odd){
+            background-color: white;
+        }
+        div#container {
+            overflow: auto; /*Move somente a tabela com scroll quando seu conteudo exceder*/
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div id="container">
+            <table>
+                <caption>Venda de produtos por mês</caption>
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Memória</td>
+                        <td>02</td>
+                        <td>06</td>
+                        <td>18</td>
+                        <td>04</td>
+                        <td>09</td>
+                        <td>11</td>
+                        <td>00</td>
+                        <td>06</td>
+                        <td>15</td>
+                        <td>03</td>
+                        <td>07</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>08</td>
+                        <td>26</td>
+                        <td>16</td>
+                        <td>89</td>
+                        <td>09</td>
+                        <td>11</td>
+                        <td>00</td>
+                        <td>36</td>
+                        <td>15</td>
+                        <td>63</td>
+                        <td>57</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>SSD</td>
+                        <td>09</td>
+                        <td>16</td>
+                        <td>98</td>
+                        <td>54</td>
+                        <td>35</td>
+                        <td>19</td>
+                        <td>08</td>
+                        <td>55</td>
+                        <td>75</td>
+                        <td>09</td>
+                        <td>27</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>66</td>
+                        <td>95</td>
+                        <td>62</td>
+                        <td>23</td>
+                        <td>09</td>
+                        <td>16</td>
+                        <td>29</td>
+                        <td>66</td>
+                        <td>35</td>
+                        <td>63</td>
+                        <td>57</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>WebCam</td>
+                        <td>02</td>
+                        <td>06</td>
+                        <td>18</td>
+                        <td>04</td>
+                        <td>09</td>
+                        <td>11</td>
+                        <td>00</td>
+                        <td>06</td>
+                        <td>15</td>
+                        <td>03</td>
+                        <td>07</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Hub USB</td>
+                        <td>02</td>
+                        <td>06</td>
+                        <td>18</td>
+                        <td>64</td>
+                        <td>99</td>
+                        <td>21</td>
+                        <td>60</td>
+                        <td>86</td>
+                        <td>45</td>
+                        <td>93</td>
+                        <td>27</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>Cooler</td>
+                        <td>69</td>
+                        <td>97</td>
+                        <td>62</td>
+                        <td>25</td>
+                        <td>32</td>
+                        <td>58</td>
+                        <td>65</td>
+                        <td>66</td>
+                        <td>33</td>
+                        <td>67</td>
+                        <td>59</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>Pen Drive</td>
+                        <td>02</td>
+                        <td>06</td>
+                        <td>18</td>
+                        <td>04</td>
+                        <td>09</td>
+                        <td>11</td>
+                        <td>00</td>
+                        <td>06</td>
+                        <td>15</td>
+                        <td>03</td>
+                        <td>07</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Roteador</td>
+                        <td>01</td>
+                        <td>06</td>
+                        <td>18</td>
+                        <td>04</td>
+                        <td>09</td>
+                        <td>11</td>
+                        <td>00</td>
+                        <td>06</td>
+                        <td>15</td>
+                        <td>03</td>
+                        <td>07</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Modem</td>
+                        <td>02</td>
+                        <td>06</td>
+                        <td>18</td>
+                        <td>04</td>
+                        <td>09</td>
+                        <td>11</td>
+                        <td>00</td>
+                        <td>06</td>
+                        <td>15</td>
+                        <td>03</td>
+                        <td>07</td>
+                        <td>14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>

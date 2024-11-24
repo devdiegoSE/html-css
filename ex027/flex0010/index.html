@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            background-color: lightgrey;
+            display: flex;    
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: blueviolet;    
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+            flex-basis: 250px; /* tamanho base dos itens, más podem sofrer variação*/
+            flex-shrink: 1;  /*por padrão 0 não pode diminuir*/
+            flex-grow: 1;    /*por padrão 1 pode aumentar*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia totam distinctio officiis quae neque facere illo dignissimos expedita natus repellendus veritatis est, aliquam perferendis deserunt error perspiciatis quos accusantium aspernatur?</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, molestiae cum dolorum accusantium, ex nostrum minima asperiores, aperiam quam quasi porro veniam beatae excepturi? Quia unde explicabo accusamus a quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum ipsam enim possimus quod nisi dolores inventore perspiciatis modi quam architecto, iste reiciendis quae magni! Vero veritatis reiciendis doloremque et! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni vero numquam eveniet autem soluta, reprehenderit consectetur aut exercitationem tenetur, odit, necessitatibus possimus? Delectus dolores, itaque mollitia sequi doloribus officia earum!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo similique pariatur mollitia iure cupiditate sequi deleniti ducimus nulla cumque reiciendis, praesentium quaerat, quis autem? Dolore saepe incidunt a expedita Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora incidunt, nihil nobis aliquam dolores hic velit eius molestias eos nulla, qui dolorem tempore vel in nostrum, quaerat laboriosam architecto!</div>
+
+    </div>
+</body>
+</html>
